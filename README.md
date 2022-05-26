@@ -17,7 +17,7 @@
 
 ## Getting Started
 
-***Go to the a repository on [github](https://github.com/anasbassi/Portfolio-Mobile.git).**
+***Go to the a repository on [github](https://github.com/anasbassi/portfolio.git).**
 **Fork the repository to your own github.**
 **Follow the follwing steps to to clone the repository**
 -Click on repository,
