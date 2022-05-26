@@ -1,0 +1,97 @@
+a {
+    text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+  width: 375px;
+  height: 100vh;
+  text-align: center;
+}
+
+img {
+  cursor: pointer;
+}
+
+.align {text-align: left;}
+
+.connect {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #7F8CFF;
+  align-self: flex-start;
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+.font {  
+  font-family: "poppins", sans-serif;  
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+  position: relative;
+  left: 15px;
+}
+
+.info {
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  width: 327px; 
+  margin: 0; 
+}
+
+.intro {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "poppins", sans-serif;
+  color: #344563;
+  width: 320px;
+  margin-bottom: 0;  
+}
+
+.navbar {
+  position: relative;
+  right: 15px;
+}
+
+.section {
+  background-image: url("../images/header-background.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  padding-top: 65px;
+}
+
+.vectors {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin: 5px;
+}
+.vectors a {
+  margin: 20px;
+}
