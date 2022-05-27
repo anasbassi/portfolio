@@ -13,6 +13,10 @@ img {
   cursor: pointer;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .align {
   text-align: left;
 }
@@ -92,7 +96,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-self: flex-start;
-  margin: 5px;
+  margin: 10px;
+  padding-left: 0;
 }
 
 .vectors a {
