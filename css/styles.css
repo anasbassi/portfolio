@@ -23,6 +23,26 @@ img {
   cursor: pointer;
 }
 
+hr {
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  border-radius: 10px;
+  border-style: none;
+}
+
+input {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  height: 48px;
+  width: 327px;
+  margin: 10px 0 10px 0;
+  font-weight: 400;
+  font-size: 17px;
+  color: #172b4d;
+  padding-left: 10px;
+}
+
 ul {
   list-style-type: none;
   display: flex;
@@ -110,13 +130,56 @@ ul {
 }
 
 .connect {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #7f8cff;
   align-self: flex-start;
   margin-left: 25px;
   margin-bottom: 0;
+}
+
+.contact {
+  background-image: url(../images/Contact.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact button {
+  width: 140px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: white;
+  margin: 65px 0 20px 0;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ebebff;
+  width: 327px;
+  margin: 0 20px 0 20px;
+}
+
+.contact textarea {
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  margin: 10px 0 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px;
 }
 
 .font {
@@ -222,7 +285,6 @@ ul {
   background-color: #f7f7f9;
   margin: 6px;
   height: 66.72px;
-  position: relative;
   font-weight: 500;
   font-size: 15px;
   color: #253858;
