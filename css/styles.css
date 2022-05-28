@@ -35,8 +35,8 @@ input {
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   height: 48px;
-  width: 327px;
-  margin: 10px 0 10px 0;
+  width: 310px;
+  margin: 0 6px 16px 6px;
   font-weight: 400;
   font-size: 17px;
   color: #172b4d;
@@ -148,6 +148,7 @@ ul {
 
 .contact button {
   width: 140px;
+  margin-left: 6px;
 }
 
 .contact form {
@@ -169,17 +170,18 @@ ul {
   font-weight: 400;
   font-size: 20px;
   color: #ebebff;
-  width: 327px;
-  margin: 0 20px 0 20px;
+  width: 310px;
+  margin: 0 33px;
 }
 
 .contact textarea {
   border-radius: 8px;
   border: 1px solid #cfd8dc;
-  margin: 10px 0 10px 0;
+  margin: 0 6px 16px 6px;
   font-size: 15px;
   font-weight: 400;
   padding: 15px;
+  width: 290px;
 }
 
 .font {
@@ -238,6 +240,10 @@ ul {
   padding: 6px;
 }
 
+.li1 {
+  border-bottom: 1px solid #dfe1e6;
+}
+
 .more {
   font-weight: 600;
   font-size: 13px;
@@ -268,19 +274,29 @@ ul {
   justify-content: flex-start;
 }
 
-.skills li {
-  border-bottom: 1px solid #dfe1e6;
+.skills > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.skills h2 {
+  margin: 0;
 }
 
 .tray {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-left: 25px;
 }
 
 .tray li {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 303px;
   background-color: #f7f7f9;
   margin: 6px;
