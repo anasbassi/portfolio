@@ -65,7 +65,7 @@ ul {
   margin: 0 0 20px 20px;
 }
 
-.about h1 {
+.about h2 {
   color: #172b4d;
   width: 268px;
   align-self: flex-start;
@@ -157,7 +157,7 @@ ul {
   padding: 20px;
 }
 
-.contact h1 {
+.contact h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
