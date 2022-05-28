@@ -2,10 +2,21 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 body {
   margin: 0 auto;
   width: 375px;
   text-align: center;
+  background-color: #e5e5e5;
+  border: 2px solid;
+  border-style: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 img {
@@ -19,8 +30,51 @@ ul {
   padding: 0;
 }
 
+.about {
+  width: 375px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10% 0 0;
+}
+
+.about button {
+  align-self: flex-start;
+  margin: 0 0 20px 20px;
+}
+
+.about h1 {
+  color: #172b4d;
+  width: 268px;
+  align-self: flex-start;
+  margin: 70px 0 0 20px;
+}
+
+.about p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  line-height: 24px;
+  width: 327px;
+  margin-top: 78px;
+}
+
 .align {
   text-align: left;
+}
+
+.btn {
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-size: 17px;
+  color: #396df2;
+  padding: 16px;
+  border: 1px solid #396df2;
+  border-radius: 6px;
+  background-color: white;
 }
 
 .canopy {
@@ -46,18 +100,6 @@ ul {
   font-size: 32px;
   color: #172b4d;
   margin: 0;
-}
-
-.card-btn {
-  font-weight: 500;
-  text-align: center;
-  letter-spacing: 0.03em;
-  font-size: 17px;
-  color: #396df2;
-  padding: 16px;
-  border: 1px solid #396df2;
-  border-radius: 6px;
-  background-color: white;
 }
 
 .card p {
@@ -117,7 +159,6 @@ ul {
   font-size: 40px;
   font-weight: 700;
   font-style: normal;
-  font-family: "poppins", sans-serif;
   color: #344563;
   width: 320px;
   margin-bottom: 0;
@@ -153,7 +194,45 @@ ul {
   justify-content: flex-start;
   align-items: center;
   margin-top: 50px;
-  padding-top: 65px;
+  padding: 65px 0;
+  border-radius: 0 0 0 10%;
+  background-color: white;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.skills li {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.tray {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tray li {
+  display: flex;
+  justify-content: flex-start;
+  width: 303px;
+  background-color: #f7f7f9;
+  margin: 6px;
+  height: 66.72px;
+  position: relative;
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
+}
+
+.tray-img {
+  width: 48px;
+  height: 48px;
+  border: 1px solid white;
+  margin: 7px;
 }
 
 .vectors {
