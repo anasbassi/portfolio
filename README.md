@@ -5,10 +5,14 @@
 > This web page is a mobile veiw of my portfolio page,
 > The head sections contains the links to external stylesheets and external font.
 > it also contains the title.
-> The body element contains the header and a section.
+> The body element contains the header, a top section, a work section and, about section.
 > The header contains the logo and a nav element.
 > The section contains information about the website.
-> All the above mentioned sections are positioned using flex box.
+> The work section contains cards that shows the works in my portfolio.
+> The cards are positioned using css grid and the card content were positioned using flex box.
+> The last section is the about section which contains a form for contacting me.
+> All sections are positioned using flex box except the work section.
+ 
 
 ## Built With
 
