@@ -50,6 +50,37 @@ ul {
   padding: 0;
 }
 
+.about {
+  width: 375px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10% 0 0;
+}
+
+.about button {
+  align-self: flex-start;
+  margin: 0 0 20px 20px;
+}
+
+.about h2 {
+  color: #172b4d;
+  width: 268px;
+  align-self: flex-start;
+  margin: 70px 0 0 20px;
+}
+
+.about p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  line-height: 24px;
+  width: 327px;
+  margin-top: 78px;
+}
+
 .align {
   text-align: left;
 }
