@@ -335,3 +335,13 @@ ul {
   height: 220px;
   border-radius: 8px;
 }
+
+input::placeholder
+{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+color: #172B4D;
+}
