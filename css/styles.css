@@ -23,6 +23,17 @@ img {
   cursor: pointer;
 }
 
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+header ul {
+  display: none;
+}
+
 hr {
   width: 134px;
   height: 5px;
@@ -41,13 +52,6 @@ input {
   font-size: 17px;
   color: #172b4d;
   padding-left: 10px;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-start;
-  padding: 0;
 }
 
 .about {
@@ -95,6 +99,11 @@ ul {
   border: 1px solid #396df2;
   border-radius: 6px;
   background-color: white;
+}
+
+.btn:hover {
+  background: #6070ff;
+  color: #fff;
 }
 
 .canopy {
@@ -342,4 +351,187 @@ input::placeholder {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-right: 150px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .about {
+    width: 100%;
+    flex-direction: row;
+    border-radius: 0;
+    margin-top: 80px;
+    padding: 90px 0;
+  }
+
+  .about > hr {
+    display: none;
+  }
+
+  .about h2 {
+    margin: 70px 0 0 0;
+  }
+
+  .about p {
+    width: 447px;
+    margin: 20px 20px 0 0;
+  }
+
+  .canopy {
+    font-size: 18px;
+  }
+
+  .card {
+    flex-direction: row;
+    margin: 90px auto 24px auto;
+    padding: 5px;
+    width: 1156px;
+  }
+
+  .card > div {
+    padding: 24px 40px;
+    margin-top: 20px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(../images/contact-shapes.png);
+    background-repeat: no-repeat;
+    background-color: #6070ff;
+    align-items: center;
+  }
+
+  .contact button {
+    align-self: center;
+  }
+
+  .contact hr {
+    display: none;
+  }
+
+  .setter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact p {
+    width: 60%;
+    font-size: 20px;
+  }
+
+  .contact textarea {
+    width: 430px;
+  }
+
+  .connect {
+    margin-left: 0;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .header h2 {
+    padding-left: 90px;
+  }
+
+  input {
+    width: 447px;
+  }
+
+  .intro {
+    font-size: 48px;
+    letter-spacing: 0.37px;
+    width: 456px;
+  }
+
+  .info {
+    font-size: 20px;
+    line-height: 28px;
+    width: 920px;
+  }
+
+  .more {
+    font-size: 18px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .section {
+    padding: 200px 191px;
+    align-items: flex-start;
+    border-radius: 0;
+    background-image: url(../images/Header-bg.png);
+  }
+
+  .section h3 {
+    margin-left: 0;
+  }
+
+  .section ul {
+    margin-left: 0;
+  }
+
+  .skills {
+    width: 600px;
+  }
+
+  .skills h2 {
+    margin: 0;
+  }
+
+  .tray {
+    flex-direction: row;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .tray li {
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+    align-items: flex-start;
+    padding: 5px;
+  }
+
+  .tray-img {
+    height: 48px;
+    width: 48px;
+  }
+
+  .vectors {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  .work-img {
+    width: 544px;
+    height: 448px;
+    padding: 24px 10px;
+  }
 }
