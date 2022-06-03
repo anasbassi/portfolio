@@ -485,7 +485,6 @@ input::placeholder {
   .section {
     padding: 200px 191px;
     align-items: flex-start;
-    background-image: none;
     border-radius: 0;
     background-image: url(../images/Header-bg.png);
   }
