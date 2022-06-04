@@ -2,11 +2,13 @@
 
 # Portfolio Mobile
 
-> This web page is a mobile veiw of my portfolio page,
+> This web page is a mobile veiw and a desktop veiw of my portfolio page.
+> The styling for the desktop veiw was made using CSS media query.
 > The head sections contains the links to external stylesheets and external font.
 > it also contains the title.
 > The body element contains the header, a top section, a work section and, about section.
 > The header contains the logo and a nav element.
+> Animation and transition was added to the header section.
 > The section contains information about the website.
 > The work section contains cards that shows the works in my portfolio.
 > The cards are positioned using css grid and the card content were positioned using flex box.
