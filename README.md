@@ -15,13 +15,15 @@
 > The last section is the about section which contains a form for contacting me.
 > All sections are positioned using flex box except the work section.
 > The website is then deployed using github pages.
-> click on this [link]() to visit my portfolio website.
  
 
 ## Built With
 
 - HTML
 - Css
+
+## Live Demo
+ https://anasbassi.github.io/portfolio/
 
 ## Getting Started
 
