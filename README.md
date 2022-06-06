@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio Mobile
+# My Portfolio
 
 > This web page is a mobile veiw and a desktop veiw of my portfolio page.
 > The styling for the desktop veiw was made using CSS media query.
@@ -14,6 +14,8 @@
 > The cards are positioned using css grid and the card content were positioned using flex box.
 > The last section is the about section which contains a form for contacting me.
 > All sections are positioned using flex box except the work section.
+> The website is then deployed using github pages.
+> click on this [link]() to visit my portfolio website.
  
 
 ## Built With
