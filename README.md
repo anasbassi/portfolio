@@ -8,6 +8,9 @@
 > it also contains the title.
 > The body element contains the header, a top section, a work section and, about section.
 > The header contains the logo and a nav element.
+> The nav element has a hambugger menu on the mobile version of the website,
+> The nav elements can be accessed by clicking in the hambuger icon,
+> The feature was added using javaScript DOM. 
 > Animation and transition was added to the header section.
 > The section contains information about the website.
 > The work section contains cards that shows the works in my portfolio.
@@ -21,6 +24,7 @@
 
 - HTML
 - Css
+- javaScript
 
 ## Live Demo
  https://anasbassi.github.io/portfolio/
@@ -51,7 +55,7 @@ To get a local copy up and running follow these simple example steps.
 ## Acknowledgments
 
 - Microverse
-- Piesie
+- Toma John Musa
 
 ## 📝 License
 
