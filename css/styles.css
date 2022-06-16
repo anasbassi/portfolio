@@ -317,6 +317,31 @@ input {
   right: 15px;
 }
 
+.popup {
+  position: fixed;
+  top: -81px;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  backdrop-filter: blur(5px);
+  padding: 16px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.popup-img {
+  width: 100%;
+}
+
+.popup-header h2 {
+  font-size: 32px;
+}
+
 .section {
   background-image: url("../images/header-background.svg");
   display: flex;
@@ -449,7 +474,7 @@ input::placeholder {
     flex-direction: row;
     margin: 90px auto 24px auto;
     padding: 5px;
-    width: 1156px;
+    width: 80%;
   }
 
   .card > div {
@@ -536,6 +561,39 @@ input::placeholder {
 
   .reverse {
     flex-direction: row-reverse;
+  }
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 16px;
+    background-color: var(--primary-white);
+    margin: 16px;
+    height: 85%;
+    border-radius: 16px;
+    overflow-y: scroll;
+  }
+
+  .popup-header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .popup-info {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .popup-main {
+    display: flex;
+  }
+
+  .popup-img {
+    width: 100%;
   }
 
   .section {
