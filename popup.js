@@ -101,18 +101,10 @@ for (let i = 0; i < works.length; i += 1) {
     <h2>${works[i].name}</h2>
     <ul class="project-details">
       <li class="client-name">${works[i].jobDescription.company}</li>
-      <li class="role">
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
-        </svg>
-        ${works[i].jobDescription.role}
-      </li>
-      <li class="yearlb">
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
-        </svg>
-        ${works[i].jobDescription.year}
-      </li>
+      <li class="more"><img src="images/Counter.png" alt=""></li>
+      <li> ${works[i].jobDescription.role}</li>
+      <li class="more"><img src="images/Counter.png" alt=""></li>
+      <li>${works[i].jobDescription.year}</li>
     </ul>
     <p>${works[i].description.featured}</p>
     <ul class="technologies-used">
@@ -137,18 +129,10 @@ function createPopup(position) {
     <h2>${works[position].name}</h2>
     <ul class="project-details">
       <li class="client-name">${works[position].jobDescription.company}</li>
-      <li class="role">
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
-        </svg>
-        ${works[position].jobDescription.role}
-      </li>
-      <li class="yearlb">
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
-        </svg>
-        ${works[position].jobDescription.year}
-      </li>
+      <li class="more"><img src="images/Counter.png" alt=""></li>
+      <li>${works[position].jobDescription.role}</li>
+      <li class="more"><img src="images/Counter.png" alt=""></li>
+      <li>${works[position].jobDescription.year}</li>
     </ul>
     <div class=" popup-close">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
