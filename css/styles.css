@@ -795,7 +795,7 @@ input::placeholder {
   padding: 16px;
   background-color: #fff;
   margin: 16px;
-  height: 85%;
+  height: 95%;
   border-radius: 16px;
   overflow-y: scroll;
 }
@@ -803,6 +803,7 @@ input::placeholder {
 @media screen and (min-width: 768px) {
   .popup-container {
     width: 55%;
+    height: 85%;
   }
 }
 
