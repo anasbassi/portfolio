@@ -360,7 +360,7 @@ input {
   justify-content: flex-start;
 }
 
-.skills > li {
+.skills>li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -453,7 +453,7 @@ input::placeholder {
     padding: 90px 0;
   }
 
-  .about > hr {
+  .about>hr {
     display: none;
   }
 
@@ -477,7 +477,7 @@ input::placeholder {
     width: 80%;
   }
 
-  .card > div {
+  .card>div {
     padding: 24px 40px;
     margin-top: 20px;
   }
@@ -677,7 +677,7 @@ input::placeholder {
 
 @media screen and (min-width: 1200px) {
   .container {
-   
+
     margin: 0 70px;
   }
 }
@@ -692,14 +692,14 @@ input::placeholder {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
- 
+
 }
 
 .project-snapshot {
   width: 100%;
   height: 42%;
   display: block;
- 
+
 }
 
 @media screen and (min-width: 768px) {
@@ -729,7 +729,7 @@ input::placeholder {
 }
 
 .project-container h2 {
-  color:  #172b4d;
+  color: #172b4d;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -754,7 +754,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: v;
+  color: white;
 }
 
 .project-container .btn {
