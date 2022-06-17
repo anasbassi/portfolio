@@ -361,7 +361,7 @@ input {
   justify-content: flex-start;
 }
 
-.skills>li {
+.skills > li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -454,7 +454,7 @@ input::placeholder {
     padding: 90px 0;
   }
 
-  .about>hr {
+  .about > hr {
     display: none;
   }
 
@@ -478,7 +478,7 @@ input::placeholder {
     width: 80%;
   }
 
-  .card>div {
+  .card > div {
     padding: 24px 40px;
     margin-top: 20px;
   }
@@ -582,7 +582,6 @@ input::placeholder {
     display: flex;
     margin: 0;
     padding: 0;
-
   }
 
   .popup-info {
@@ -659,10 +658,6 @@ input::placeholder {
   margin: 0;
 }
 
-.display-none {
-  display: none;
-}
-
 .position-fixed {
   position: fixed;
 }
@@ -670,7 +665,6 @@ input::placeholder {
 .section-margin-t {
   margin-top: 100px;
 }
-
 
 @media screen and (min-width: 768px) {
   .container {
@@ -702,7 +696,6 @@ input::placeholder {
   width: 100%;
   height: 42%;
   display: block;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -819,13 +812,6 @@ input::placeholder {
 
 .popup-container ul {
   margin-bottom: 16px;
-}
-
-.popup-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  cursor: pointer;
 }
 
 .popup-snapshot {

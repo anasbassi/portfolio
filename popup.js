@@ -89,9 +89,9 @@ const works = [
 ];
 
 for (let i = 0; i < works.length; i += 1) {
-  const worksContainer = document.createElement("div");
+  const worksContainer = document.createElement('div');
   worksContainer.innerHTML = ` <div class="project-snapshot ${
-    i % 2 !== 0 ? "odd" : ""
+    i % 2 !== 0 ? 'odd' : ''
   }">
     <a href="">
       <img src="/images/${works[i].thumbnail}.png" alt="tonic" />
@@ -116,14 +116,14 @@ for (let i = 0; i < works.length; i += 1) {
       see project
     </button>
   </div> `;
-  worksContainer.classList.add("project-container", "container");
+  worksContainer.classList.add('project-container', 'container');
   worksSection.appendChild(worksContainer);
 }
 
-const projectButton = document.querySelectorAll(".project-content .btn");
+const projectButton = document.querySelectorAll('.project-content .btn');
 
 function createPopup(position) {
-  const popup = document.createElement("section");
+  const popup = document.createElement('section');
   popup.innerHTML = ` <div class="popup-wrapper">
   <div class="popup-container">
     <h2>${works[position].name}</h2>
@@ -183,22 +183,22 @@ function createPopup(position) {
     </div>
   </div>
   </div> `;
-  popup.id = "project-popup";
+  popup.id = 'project-popup';
   worksSection.appendChild(popup);
-  headerWrapper.classList.toggle("display-none");
-  headerWrapper.classList.toggle("position-fixed");
-  document.body.classList.toggle("no-scroll");
+  headerWrapper.classList.toggle('display-none');
+  headerWrapper.classList.toggle('position-fixed');
+  document.body.classList.toggle('no-scroll');
 }
 
 projectButton.forEach((btn, index) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener('click', () => {
     createPopup(index);
-    const popupHTML = document.getElementById("project-popup");
-    document.querySelector(".popup-close").addEventListener("click", () => {
+    const popupHTML = document.getElementById('project-popup');
+    document.querySelector('.popup-close').addEventListener('click', () => {
       worksSection.removeChild(popupHTML);
-      headerWrapper.classList.toggle("display-none");
-      headerWrapper.classList.toggle("position-fixed");
-      document.body.classList.toggle("no-scroll");
+      headerWrapper.classList.toggle('display-none');
+      headerWrapper.classList.toggle('position-fixed');
+      document.body.classList.toggle('no-scroll');
     });
   });
 });
