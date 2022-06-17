@@ -802,7 +802,7 @@ input::placeholder {
 
 @media screen and (min-width: 768px) {
   .popup-container {
-    width: 55%;
+    width: 60%;
     height: 85%;
   }
 }
