@@ -27,29 +27,33 @@ const setSuccess = (element) => {
 
 const isValidEmail = (email) => {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+  return re.test(String(email)) && email === email.toLowerCase();
 };
 
-const validateInputs = () => {
+const validateInputs = (e) => {
   const nameValue = userName.value.trim();
   const emailValue = userEmail.value.trim();
   const messageValue = userMessage.value.trim();
 
   if (nameValue === '') {
+    e.preventDefault();
     setError(userName, 'Your name is required!');
   } else {
     setSuccess(userName);
   }
 
   if (emailValue === '') {
+    e.preventDefault();
     setError(userEmail, 'Your email is required!');
   } else if (!isValidEmail(emailValue)) {
+    e.preventDefault();
     setError(userEmail, 'Provide a valid email address.');
   } else {
     setSuccess(userEmail);
   }
 
   if (messageValue === '') {
+    e.preventDefault();
     setError(userMessage, 'Write your message here!');
   } else {
     setSuccess(userName);
@@ -57,7 +61,5 @@ const validateInputs = () => {
 };
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  validateInputs();
+  validateInputs(e);
 });
