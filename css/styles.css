@@ -47,7 +47,7 @@ input {
   border-radius: 8px;
   height: 48px;
   width: 310px;
-  margin: 0 6px 16px 6px;
+  margin: 0 6px 0 6px;
   font-weight: 400;
   font-size: 17px;
   color: #172b4d;
@@ -158,18 +158,19 @@ input {
 
 .contact {
   background-image: url(../images/Contact.png);
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-.contact button {
+.form button {
   width: 140px;
   margin-left: 6px;
 }
 
-.contact form {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,10 +193,10 @@ input {
   margin: 0 33px;
 }
 
-.contact textarea {
+.form textarea {
   border-radius: 8px;
   border: 1px solid #cfd8dc;
-  margin: 0 6px 16px 6px;
+  margin: 0 6px 2px 6px;
   font-size: 15px;
   font-weight: 400;
   padding: 15px;
@@ -497,7 +498,7 @@ input::placeholder {
     align-items: center;
   }
 
-  .contact button {
+  .form button {
     align-self: center;
   }
 
@@ -516,7 +517,7 @@ input::placeholder {
     font-size: 20px;
   }
 
-  .contact textarea {
+  .form textarea {
     width: 430px;
   }
 
@@ -902,4 +903,18 @@ input::placeholder {
 
 .popup-content .btn:hover svg path {
   fill: #fff;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 15px;
+  height: 28px;
+  margin-left: 5px;
 }

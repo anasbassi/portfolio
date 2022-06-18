@@ -17,7 +17,8 @@
 > The section contains cards that shows the works in my portfolio.
 > The cards are positioned using css grid and the card content were positioned using flex box.
 > More details about the project can be accessed using the see project button which is also made using javaScript. 
-> The last section is the about section which contains a form for contacting me.
+> The last section is the contact section which contains a form for contacting the author.
+> The contact form uses javaScript validation. 
 > All sections are positioned using flex box except the work section.
 > The website is then deployed using github pages.
  
