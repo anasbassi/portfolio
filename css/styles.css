@@ -8,7 +8,7 @@ a:hover {
 
 body {
   margin: 0 auto;
-  width: 375px;
+  width: 100%;
   text-align: center;
   background-color: #e5e5e5;
   border: 2px solid;
@@ -55,7 +55,7 @@ input {
 }
 
 .about {
-  width: 375px;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -157,8 +157,7 @@ input {
 }
 
 .contact {
-  background-image: url(../images/Contact.png);
-  background-repeat: no-repeat;
+  background-color: #6070ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -218,7 +217,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 375px;
+  width: 100%;
   margin: 0 auto;
   background-color: white;
 }
@@ -367,7 +366,7 @@ input {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 20px 35px;
 }
 
 .skills h2 {
@@ -430,6 +429,18 @@ input::placeholder {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
+}
+
+
+.setter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wraper {
+  align-self: flex-start;
 }
 
 @media only screen and (min-width: 768px) {
@@ -510,6 +521,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .contact p {
@@ -651,55 +663,11 @@ input::placeholder {
     height: 448px;
     padding: 24px 10px;
   }
-}
 
-.no-scroll {
-  overflow-y: hidden;
-  height: 100%;
-  margin: 0;
-}
-
-.position-fixed {
-  position: fixed;
-}
-
-.section-margin-t {
-  margin-top: 100px;
-}
-
-@media screen and (min-width: 768px) {
   .container {
     margin: 0 90px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .container {
-    margin: 0 auto;
-  }
-}
-
-.projects-wrapper {
-  display: grid;
-  row-gap: 100px;
-}
-
-.project-container {
-  padding: 16px 16px 54px 16px;
-  background-color: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.project-snapshot {
-  width: 100%;
-  height: 42%;
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
   .project-container {
     display: flex;
     gap: 46px;
@@ -718,11 +686,56 @@ input::placeholder {
   .project-container .odd {
     order: 999;
   }
+
+  .popup-container {
+    width: 60%;
+    height: 85%;
+  }
+
+  .popup-snapshot {
+    height: 75%;
+  }
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.section-margin-t {
+  margin-top: 100px;
+}
+
+.projects-wrapper {
+  display: grid;
+  row-gap: 100px;
+}
+
+.project-container {
+  padding: 16px 16px 54px 16px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.project-snapshot {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .project-snapshot img {
   width: 100%;
   height: 100%;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
 }
 
 .project-container h2 {
@@ -801,13 +814,6 @@ input::placeholder {
   overflow-y: scroll;
 }
 
-@media screen and (min-width: 768px) {
-  .popup-container {
-    width: 60%;
-    height: 85%;
-  }
-}
-
 .popup-container h2 {
   margin: 0 0 3px 0;
 }
@@ -817,18 +823,14 @@ input::placeholder {
 }
 
 .popup-snapshot {
-  height: 40%;
-}
-
-@media screen and (min-width: 768px) {
-  .popup-snapshot {
-    height: 75%;
-  }
+  height: 60%;
 }
 
 .popup-snapshot img {
   width: 100%;
   height: 100%;
+  border-radius: 30px;
+  border: 2px solid #e5e5e5;
 }
 
 .popup-content {
@@ -839,6 +841,19 @@ input::placeholder {
   .popup-content {
     display: flex;
     gap: 20px;
+  }
+
+  .popup-content .technologies-used li:nth-child(n+4) {
+    display: block;
+  }
+
+  .popup-content .technologies-used {
+    margin-top: 0;
+  }
+
+  .popup-content .btn-wrapper {
+    display: flex;
+    gap: 10px;
   }
 }
 
@@ -863,16 +878,6 @@ input::placeholder {
   display: none;
 }
 
-@media screen and (min-width: 992px) {
-  .popup-content .technologies-used li:nth-child(n+4) {
-    display: block;
-  }
-
-  .popup-content .technologies-used {
-    margin-top: 0;
-  }
-}
-
 .popup-content .btn-wrapper {
   display: flex;
   gap: 30px;
@@ -882,13 +887,6 @@ input::placeholder {
   padding: 5px 12px;
   border-radius: 4px;
   font-size: 15px;
-}
-
-@media screen and (min-width: 992px) {
-  .popup-content .btn-wrapper {
-    display: flex;
-    gap: 10px;
-  }
 }
 
 .popup-content .btn svg {

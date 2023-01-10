@@ -3,11 +3,11 @@ const headerWrapper = document.querySelector('.header');
 
 const works = [
   {
-    name: 'Tonic',
+    name: 'Budjet App',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      company: 'MICROVERSE',
+      role: 'Student',
+      year: '2022',
     },
     description: {
       featured:
@@ -16,57 +16,57 @@ const works = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     languages: {
-      featured: ['html', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      featured: ['html', 'css', 'ruby on rails'],
+      detailed: ['html', 'css', 'github', 'ruby', 'Bootstrap'],
     },
     thumbnail: 'Snapshoot1',
     liveUrl: 'https://anasbassi.github.io/portfolio/',
     sourceCode: 'https://github.com/anasbassi',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'To-do List App',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: 'MICROVERSE',
+      role: 'Student',
+      year: '2022',
     },
     description: {
       featured:
-        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+        'The to-do list app is a web app built using HTML, CSS, and JavaScript. it helps users organize their daily todos and strikes out the completed todos.',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        'To-do-List website is a page that contains information that you already listed of shores and things to do . The list can be generated from the application by writing in the field provided, the list can also be editted, and removed. The to-do-list app can also save the checked and clear them using the clear all completed button.',
     },
     languages: {
-      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      featured: ['html', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'webpack'],
     },
     thumbnail: 'Snapshoot2',
-    liveUrl: 'https://anasbassi.github.io/portfolio/',
-    sourceCode: 'https://github.com/anasbassi',
+    liveUrl: 'https://myto-do-list-app.netlify.app/',
+    sourceCode: 'https://github.com/anasbassi/todo-list',
   },
   {
-    name: 'Facebook 360',
+    name: 'African Basketball Academy',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      company: 'MICROVERSE',
+      role: 'Student',
+      year: '2022',
     },
     description: {
       featured:
-        "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+        'The African Basketball Academy website is a responsive website built for the mentioned basketball academy, it gives an introduction to the school and the activities it engages in.',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "The African basketball Academy was built with Html, Css, and, JavaScript. It is a responsive website that belongs to an African Basketball Academy and, it describes the school's curriculum and activities.",
     },
     languages: {
-      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      featured: ['html', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github',],
     },
-    thumbnail: 'Snapshoot3',
-    liveUrl: 'https://anasbassi.github.io/portfolio/',
-    sourceCode: 'https://github.com/anasbassi',
+    thumbnail: 'ABA',
+    liveUrl: 'https://anasbassi.github.io/Capstone-Project-1/',
+    sourceCode: 'https://github.com/anasbassi/Capstone-Project-1',
   },
   {
-    name: 'Uber Navigation',
+    name: 'Doctors Meetup',
     jobDescription: {
       company: 'Uber',
       role: 'Lead Developer',
@@ -82,19 +82,19 @@ const works = [
       featured: ['html', 'Ruby on rails', 'css', 'javascript'],
       detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: 'Snapshoot4',
+    thumbnail: 'DOC',
     liveUrl: 'https://anasbassi.github.io/portfolio/',
     sourceCode: 'https://github.com/anasbassi',
   },
 ];
 
-for (let i = 0; i < works.length; i += 1) {
+for (let i = 0; i < works.length; i++) {
   const worksContainer = document.createElement('div');
   worksContainer.innerHTML = ` <div class="project-snapshot ${
     i % 2 !== 0 ? 'odd' : ''
   }">
     <a href="">
-      <img src="/images/${works[i].thumbnail}.png" alt="tonic" />
+      <img src="./images/${works[i].thumbnail}.png" alt="tonic" />
     </a>
   </div>
   <div class="project-content">
@@ -112,7 +112,7 @@ for (let i = 0; i < works.length; i += 1) {
       <li>${works[i].languages.featured[1]}</li>
       <li>${works[i].languages.featured[2]}</li>
     </ul>
-    <button type="button" class="btn">
+    <button type="button" class="btn see">
       see project
     </button>
   </div> `;
@@ -143,7 +143,7 @@ function createPopup(position) {
     </div>
     <div class="popup-snapshot">
       <a href="">
-        <img src="/images/${works[position].thumbnail}.png" alt="tonic-2" />
+        <img src="./images/${works[position].thumbnail}.png" alt="tonic-2" />
       </a>
     </div>
     <div class="popup-content">
