@@ -94,7 +94,7 @@ for (let i = 0; i < works.length; i += 1) {
     i % 2 !== 0 ? 'odd' : ''
   }">
     <a href="">
-      <img src="./images/${works[i].thumbnail}.png" alt="tonic" />
+      <img src="images/${works[i].thumbnail}.png" alt="tonic" />
     </a>
   </div>
   <div class="project-content">
