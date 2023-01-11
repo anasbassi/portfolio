@@ -59,7 +59,7 @@ const works = [
     },
     languages: {
       featured: ['html', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github',],
+      detailed: ['html', 'css', 'javascript', 'github'],
     },
     thumbnail: 'ABA',
     liveUrl: 'https://anasbassi.github.io/Capstone-Project-1/',
@@ -76,7 +76,7 @@ const works = [
       featured:
         '[DOCTOR-MEET-UP-BACKEND] is an App is a Ruby o rails web application(consist of mobile and desktop versions) that provide API endpoints for users to book an appointment with their Doctors,',
       detailed:
-        "[DOCTOR-MEET-UP-BACKEND] is an App is a Ruby o rails web application(consist of mobile and desktop versions) that provide API endpoints for users to book an appointment with their Doctors, users are allow to add or remove doctor from the list.",
+        '[DOCTOR-MEET-UP-BACKEND] is an App is a Ruby o rails web application(consist of mobile and desktop versions) that provide API endpoints for users to book an appointment with their Doctors, users are allow to add or remove doctor from the list.',
     },
     languages: {
       featured: ['html', 'Ruby on rails', 'css', 'React'],
@@ -88,7 +88,7 @@ const works = [
   },
 ];
 
-for (let i = 0; i < works.length; i++) {
+for (let i = 0; i < works.length; i += 1) {
   const worksContainer = document.createElement('div');
   worksContainer.innerHTML = ` <div class="project-snapshot ${
     i % 2 !== 0 ? 'odd' : ''
@@ -202,14 +202,3 @@ projectButton.forEach((btn, index) => {
     });
   });
 });
-
-// const click = document.querySelectorAll(".tray");
-// function show_hide() {
-//   click.forEach((index) => {
-//     if(index.style.display ==="none") {  
-//       index.style.display ="flex";  
-//    } else {  
-//       index.style.display ="none";  
-//    }
-//   })       
-// }  
