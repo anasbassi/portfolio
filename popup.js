@@ -74,17 +74,17 @@ const works = [
     },
     description: {
       featured:
-        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+        '[DOCTOR-MEET-UP-BACKEND] is an App is a Ruby o rails web application(consist of mobile and desktop versions) that provide API endpoints for users to book an appointment with their Doctors,',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "[DOCTOR-MEET-UP-BACKEND] is an App is a Ruby o rails web application(consist of mobile and desktop versions) that provide API endpoints for users to book an appointment with their Doctors, users are allow to add or remove doctor from the list.",
     },
     languages: {
-      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      featured: ['html', 'Ruby on rails', 'css', 'React'],
+      detailed: ['html', 'css', 'React', 'github', 'ruby', 'Bootstrap'],
     },
     thumbnail: 'DOC',
-    liveUrl: 'https://anasbassi.github.io/portfolio/',
-    sourceCode: 'https://github.com/anasbassi',
+    liveUrl: 'https://meetup.sethpro.com/',
+    sourceCode: 'https://github.com/Sevenpros/doctor-meet-up-backend',
   },
 ];
 
@@ -202,3 +202,14 @@ projectButton.forEach((btn, index) => {
     });
   });
 });
+
+// const click = document.querySelectorAll(".tray");
+// function show_hide() {
+//   click.forEach((index) => {
+//     if(index.style.display ==="none") {  
+//       index.style.display ="flex";  
+//    } else {  
+//       index.style.display ="none";  
+//    }
+//   })       
+// }  
