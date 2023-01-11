@@ -94,7 +94,7 @@ for (let i = 0; i < works.length; i += 1) {
     i % 2 !== 0 ? 'odd' : ''
   }">
     <a href="">
-      <img src="images/${works[i].thumbnail}.png" alt="tonic" />
+      <img src="./images/${works[i].thumbnail}.png" alt="tonic" />
     </a>
   </div>
   <div class="project-content">
@@ -129,9 +129,9 @@ function createPopup(position) {
     <h2>${works[position].name}</h2>
     <ul class="project-details">
       <li class="client-name">${works[position].jobDescription.company}</li>
-      <li class="more"><img src="images/Counter.png" alt=""></li>
+      <li class="more"><img src="./images/Counter.png" alt=""></li>
       <li>${works[position].jobDescription.role}</li>
-      <li class="more"><img src="images/Counter.png" alt=""></li>
+      <li class="more"><img src="./images/Counter.png" alt=""></li>
       <li>${works[position].jobDescription.year}</li>
     </ul>
     <div class=" popup-close">
