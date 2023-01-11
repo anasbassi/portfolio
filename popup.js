@@ -19,7 +19,7 @@ const works = [
       featured: ['html', 'css', 'ruby on rails'],
       detailed: ['html', 'css', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: 'Snapshoot1.png',
+    thumbnail: 'Snapshoot1',
     liveUrl: 'https://anasbassi.github.io/portfolio/',
     sourceCode: 'https://github.com/anasbassi',
   },
@@ -40,7 +40,7 @@ const works = [
       featured: ['html', 'css', 'javascript'],
       detailed: ['html', 'css', 'javascript', 'github', 'webpack'],
     },
-    thumbnail: 'Snapshoot2.png',
+    thumbnail: 'Snapshoot2',
     liveUrl: 'https://myto-do-list-app.netlify.app/',
     sourceCode: 'https://github.com/anasbassi/todo-list',
   },
@@ -61,7 +61,7 @@ const works = [
       featured: ['html', 'css', 'javascript'],
       detailed: ['html', 'css', 'javascript', 'github'],
     },
-    thumbnail: 'ABA.PNG',
+    thumbnail: 'ABA',
     liveUrl: 'https://anasbassi.github.io/Capstone-Project-1/',
     sourceCode: 'https://github.com/anasbassi/Capstone-Project-1',
   },
@@ -82,7 +82,7 @@ const works = [
       featured: ['html', 'Ruby on rails', 'css', 'React'],
       detailed: ['html', 'css', 'React', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: 'DOC.PNG',
+    thumbnail: 'DOC',
     liveUrl: 'https://meetup.sethpro.com/',
     sourceCode: 'https://github.com/Sevenpros/doctor-meet-up-backend',
   },
@@ -94,7 +94,7 @@ for (let i = 0; i < works.length; i += 1) {
     i % 2 !== 0 ? 'odd' : ''
   }">
     <a href="">
-      <img src="images/${works[i].thumbnail}" alt="tonic" />
+      <img src="images/${works[i].thumbnail}.png" alt="tonic" />
     </a>
   </div>
   <div class="project-content">
